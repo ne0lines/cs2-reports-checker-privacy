@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CS2 Reports Checker Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #121826;
+        --muted: #52607a;
+        --border: #d7deea;
+        --accent: #0f6fff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(180deg, #eef3fb 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 56px 24px 72px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 32px;
+        box-shadow: 0 18px 50px rgba(18, 24, 38, 0.06);
+      }
+      h1, h2 { line-height: 1.2; }
+      h1 { margin: 0 0 12px; font-size: 2rem; }
+      h2 { margin-top: 32px; font-size: 1.15rem; }
+      p, li { color: var(--muted); }
+      a { color: var(--accent); }
+      code {
+        background: #eef3fb;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 2px 6px;
+        font-size: 0.95em;
+      }
+      ul { padding-left: 20px; }
+      .meta {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1>Privacy Policy for CS2 Reports Checker</h1>
+        <p class="meta">Last updated: April 22, 2026</p>
+
+        <p>
+          CS2 Reports Checker is a Chrome extension that helps a user review their own Steam CS2 player reports page,
+          check reported profiles for VAC and game-ban status, display the results on the page, and export the scan
+          results to JSON or CSV when the user chooses to do so.
+        </p>
+
+        <h2>What data the extension accesses</h2>
+        <ul>
+          <li>Steam page content from the user's CS2 player reports page, including report dates, reasons, profile links, and match links.</li>
+          <li>Steam profile identifiers needed to resolve vanity URLs and check ban status.</li>
+          <li>A Steam <code>sessionid</code> value read locally in the browser to request the user's reports page data from Steam while the user is signed in.</li>
+        </ul>
+
+        <h2>How the data is used</h2>
+        <ul>
+          <li>To scan the user's Steam CS2 reports page.</li>
+          <li>To resolve Steam vanity profile URLs to SteamID64 values.</li>
+          <li>To request VAC and game-ban lookup data for reported Steam profiles.</li>
+          <li>To show scan results directly on the Steam page and in the extension UI.</li>
+          <li>To generate JSON or CSV exports only when the user explicitly starts an export.</li>
+        </ul>
+
+        <h2>Where data is sent</h2>
+        <p>
+          The extension sends Steam profile identifiers to the developer-operated endpoint at
+          <code>https://extension.ne0lines.xyz/vac.php</code> to retrieve VAC and game-ban lookup data.
+          The extension also requests report-page and profile-resolution data from <code>steamcommunity.com</code>.
+        </p>
+
+        <h2>Data storage</h2>
+        <p>
+          The extension does not create a developer account for the user, does not sell user data, and does not use user data
+          for advertising. Scan data is processed in the browser during use. Export files are created locally in the user's
+          browser only when the user explicitly chooses to export the results.
+        </p>
+
+        <h2>Authentication data</h2>
+        <p>
+          The extension does not collect passwords. It reads the Steam <code>sessionid</code> locally in the browser only to
+          request the user's player reports data from Steam while the user is already signed in.
+        </p>
+
+        <h2>Remote code</h2>
+        <p>
+          The extension does not download or execute remote JavaScript or WebAssembly code. Network responses are used as data only.
+        </p>
+
+        <h2>Sharing</h2>
+        <p>
+          User data is not sold. Other than the network requests required to Steam and the VAC lookup endpoint described above,
+          the extension does not transfer user data for purposes unrelated to the extension's single purpose.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          This policy may be updated when the extension changes. The latest version will be published at this URL.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
