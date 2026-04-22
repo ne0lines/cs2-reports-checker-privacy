@@ -67,17 +67,17 @@
 
         <h2>What data the extension accesses</h2>
         <ul>
-          <li>Steam page content from the user's CS2 player reports page, including report dates, reasons, profile links, and match links.</li>
+          <li>Steam page content from the user's CS2 player reports data, including report dates, reasons, profile links, and match links.</li>
           <li>Steam profile identifiers needed to resolve vanity URLs and check ban status.</li>
-          <li>A Steam <code>sessionid</code> value read locally in the browser to request the user's reports page data from Steam while the user is signed in.</li>
+          <li>A Steam <code>sessionid</code> value read through the extension's cookie access in the user's browser to request the user's reports data from Steam while the user is signed in.</li>
         </ul>
 
         <h2>How the data is used</h2>
         <ul>
-          <li>To scan the user's Steam CS2 reports page.</li>
+          <li>To scan the user's Steam CS2 player reports in the extension background.</li>
           <li>To resolve Steam vanity profile URLs to SteamID64 values.</li>
           <li>To request VAC and game-ban lookup data for reported Steam profiles.</li>
-          <li>To show scan results directly on the Steam page and in the extension UI.</li>
+          <li>To show scan results in the extension UI and, when the user opens the reports page, directly on the Steam page.</li>
           <li>To generate JSON or CSV exports only when the user explicitly starts an export.</li>
         </ul>
 
@@ -97,8 +97,8 @@
 
         <h2>Authentication data</h2>
         <p>
-          The extension does not collect passwords. It reads the Steam <code>sessionid</code> locally in the browser only to
-          request the user's player reports data from Steam while the user is already signed in.
+          The extension does not collect passwords. It reads the Steam <code>sessionid</code> in the browser through extension cookie
+          access only to request the user's player reports data from Steam while the user is already signed in.
         </p>
 
         <h2>Remote code</h2>
